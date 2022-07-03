@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Personal_Info">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/heading1"
+            android:layout_width="324dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="77dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="77dp"
+            android:text="Enter your phone number"
+            android:textColor="#FFA500"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="33dp" />
+
+        <TextView
+            android:id="@+id/heading2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="77dp"
+            android:text="for verification"
+            android:textAlignment="center"
+            android:textColor="#FFA500"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="33dp" />
+
+        <ImageView
+            android:id="@+id/verificationImage"
+            android:layout_width="163dp"
+            android:layout_height="278dp"
+            android:layout_marginStart="124dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="124dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/pno"
+            tools:layout_editor_absoluteY="107dp" />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="421dp"
+        android:layout_height="321dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/countryCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="10dp"
+                    android:backgroundTint="@color/light_ornage"
+                    android:contentDescription="@string/app_name"
+                    android:entries="@array/list"
+                    android:paddingLeft="5dp" />
+
+                <EditText
+                    android:id="@+id/phoneNumber"
+                    android:layout_width="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/onclick_border_color"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="3000000000"
+                    android:inputType="phone"
+                    android:minHeight="48dp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/register"
+                android:layout_width="127dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="140dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="140dp"
+                android:layout_marginRight="130dp"
+                android:layout_marginLeft="130dp"
+                android:background="@drawable/custom_button"
+                android:onClick="register"
+                android:text="Register"
+                android:textColor="#205375"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/helpText"
+                android:layout_width="196dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="145dp"
+                android:layout_marginTop="27dp"
+                android:layout_marginEnd="140dp"
+                android:layout_marginLeft="130dp"
+                android:layout_marginRight="130dp"
+                android:minHeight="48dp"
+                android:onClick="helpAndSupport"
+                android:text="Help and support ?"
+                android:textColor="#FFA500"
+                android:textSize="16sp"
+                android:textStyle="bold"
+               />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

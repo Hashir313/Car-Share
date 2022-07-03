@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">CareShare</string>
+    <string-array name="list">
+        <item>+91</item>
+        <item>+92</item>
+        <item>+93</item>
+        <item>+94</item>
+        <item>+95</item>
+        <item>+96</item>
+        <item>+97</item>
+        <item>+98</item>
+        <item>+99</item>
+    </string-array>
+</resources>
